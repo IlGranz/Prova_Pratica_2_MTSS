@@ -11,6 +11,14 @@
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
+    <repositories>
+        <!-- Aggiungi il repository per il plugin coveralls -->
+        <repository>
+            <id>coveralls-repo</id>
+            <url>https://github.com/coverallsapp/maven-plugin</url>
+        </repository>
+    </repositories>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>21</maven.compiler.release>
@@ -53,7 +61,7 @@
     </dependencies>
 
     <build>
-        <pluginManagement>
+        <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
                 <plugin>
@@ -186,6 +194,20 @@
                     </java>
                 </configuration>
             </plugin>
+            <!-- Aggiungi il plugin Coveralls qui -->
+            <plugin>
+                <groupId>org.gemini</groupId>
+                <artifactId>coveralls-maven-plugin</artifactId>
+                <version>4.3.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 </project>
+
