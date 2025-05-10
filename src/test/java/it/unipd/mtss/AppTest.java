@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
  * Unit test for a simple check.
  */
 
-public class Test {
+public class AppTest {
 
     /**
      * A simple test to check if true is true.
