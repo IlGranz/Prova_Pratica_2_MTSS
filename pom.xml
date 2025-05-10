@@ -177,9 +177,7 @@
                 </executions>
                 <configuration>
                     <java>
-                        <eclipse>
-                            <file>${basedir}/eclipse-formatter.xml</file>
-                        </eclipse>
+                       
                         <removeUnusedImports />
                         <trimTrailingWhitespace />
                         <endWithNewline />
