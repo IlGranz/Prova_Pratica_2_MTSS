@@ -108,14 +108,9 @@
                 <configuration>
                     <failsOnError>true</failsOnError>
                     <configLocation>checkstyle.xml</configLocation>
-                    <propertyExpansion>
-                        <name1>Lorenzo</name1>
-                        <lastname1>Milanese</lastname1>
-                        <id1>2117110</id1>
-                        <name2>Edoardo</name2>
-                        <lastname2>Granziero</lastname2>
-                        <id2>2110996</id2>
-                    </propertyExpansion>
+                    
+                    <propertyExpansion>name1=Lorenzo;lastname1=Milanese;id1=2117110;name2=Edoardo;lastname2=Granziero;id2=2110996</propertyExpansion>
+                    
                     <consoleOutput>true</consoleOutput>
                 </configuration>
                 <executions>
