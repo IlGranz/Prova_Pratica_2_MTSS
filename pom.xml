@@ -11,6 +11,21 @@
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
+    <plugins>
+        <plugin>
+            <groupId>org.gemini</groupId>
+            <artifactId>coveralls-maven-plugin</artifactId>
+            <version>4.3.0</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>report</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>21</maven.compiler.release>
@@ -28,6 +43,8 @@
         </dependencies>
     </dependencyManagement>
 
+    
+         
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
